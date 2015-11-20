@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="ui-mobile">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cheese/themes/cheese.min.css">
+    <link rel="stylesheet" href="css/cheese/themes/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/js.js"></script>
+    <title>Delicious Cheesecake Tutorial</title>
+</head>
+<body data-theme="b">
+    <!--Home Page-->
+    <!--Header-->
+    <div data-role="page" id="home" data-url="home" data-theme="b">
+        <div data-role="header" role="banner">
+            <h1 class="ui-title">Cheesecake!</h1>
+            <img src="pics/mastPic.jpg" data-role="header" alt="cake" id="mastPic">
+        </div>
+        <!--/Header-->
+        <!--Main Content-->
+        <div data-role="content" data-theme="b" role="main">
+            <p>Welcome to the cheesecake app! In this tutorial we will take you through step by step on how to make the most delicious cheesecake you'll ever eat!</p>
+            <div>
+                <h1>Click to Start!</h1>
+                <div>
+                    <a href="#disc" data-transition="slidedown" data-role="button">
+                        <img src="pics/startpic.jpeg" id="homePic" alt class="cheesecake">
+                        <h3>Cheesecake Tutorial</h3>
+                        <p>Let your tastebuds run wild</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--/Main Content-->
+        <!--Footer-->
+        <div data-role="footer" data-position="fixed" role="contentinfo" data-theme="b">
+            <div data-role="navbar" class="ui-navbar" role="navigation">
+                <ul>
+                    <li>
+                        <a href="#home" data-role="button" data-icon="home" data-iconpos="top" class="ui-state-disabled" data-transition="slidedown">
+                        Home
+                    </a>
+                    </li>
+                    <li>
+                        <a href="#info" data-role="button" data-icon="info" data-iconpos="top" data-transition="slidedown">
+                        About Me
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--/Footer-->
+    </div>
+    <!--Disclaimer-->
+    <div data-role="page" data-theme="b" tabindex="0" data-url="disc" id="disc">
+    <!--Header-->
+        <div data-role="header" role="banner" data-theme="b">
+            <h1 data-role="header">Welcome!</h1>
+        </div>
+        <!--/Header-->
+        <!--Content-->
+        <div data-role="content" data-theme="b" role="main">
+            <h1>DISCLAIMER</h1>
+            <p>Cheesecake Tutorial Co. is not liable for any bodily harm that may occur in the event of a cuisine catastrophy, nor are we liable for any serious, and possibly life threatening, cheesecake addictions or emotional distress that may occur after trying our cheesecake</p>
+            <a href="#part1" id="startTut" data-role="button" role="button" data-theme="b">
+               Click to Start!
+           </a>
+        </div>
+        <!--/Content-->
+        <!--Footer-->
+             <div data-role="footer" data-position="fixed" role="contentinfo" data-theme="b">
+                <div data-role="navbar" role="navigation">
+                    <ul>
+                        <li>
+                            <a href="#home" data-role="button" data-transition="slidedown" data-icon="home" data-iconpos="top">
+                        Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#info" data-role="button" role="button" data-transition="slidedown" data-icon="info" data-iconpos="top">
+                        About Me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <!--/Footer-->       
+    </div>
+    <!--/Disclaimer-->
+    <!--STEP 1 OF 9-->
+    <div data-role="page" id="part1" data-dialog="true" data-close-btn="none" data-url="part1" data-theme="b">
+            <!--Step 1 Main Content-->
+            <div data-role="header" role="banner" data-theme="b">
+                <a href="#home" id="closebtn" data-theme="b" data-icon="delete" data-role="button" role="button" data-transition="slidedown" data-iconpos="left"></a>
+                <h1 data-role="header">Step 1 of 9</h1>
+            </div>
+            <div data-role="content">
+                <h2>Make sure you have the time and ingredients!</h2>
+                <ul>
+                    <li>Prep Time: 20 Minutes</li>
+                    <li>Cook Time: 25 Minutes</li>
+                    <li>Total Time: 45 Minutes</li>
+                </ul>
+                <h2>Ingredients:</h2>
+                <ul>
+                    <li>2x 8oz packages of cream cheese</li>
+                    <li>3/4 cup of sugar</li>
+                    <li>1 1/2 teaspoons of vanilla extract</li>
+                    <li>1 egg</li>
+                    <li>1 egg yolk</li>
+                    <li>12x vanilla wafer cookies</li>
+                    <li>canned cherries in syrup</li>
+                </ul>
+                <a href="#" data-role="button" class="ui-state-disabled" role="button" data-theme="b" data-corners="true" data-inline="true" data-iconpos="left" data-icon="carat-l"></a>
+                <a href="#part2" data-role="button" class="nextPage" id="rightbtn" data-corners="true" data-inline="true" role="button" data-theme="b" data-iconpos="right" data-icon="carat-r"></a>
+            </div>
+    </div>
+    <!--STEP 2 OF 9-->
+    <div data-role="page" id="part2" data-dialog="true" data-close-btn="none" data-url="part2" data-theme="b">
+            <div data-role="header" role="banner" data-theme="b">
+                <a href="#home" id="closebtn" data-theme="b" data-icon="delete" data-role="button" role="button" data-transition="slidedown" data-iconpos="left"></a>
+                <h1 data-role="header">Step 2 of 9</h1>
+            </div>
+            <div data-role="content" data-theme="b" role="main">
+                <h1>Crush Crush Crush</h1>
+                <img id="tutPic2" src="pics/crush.jpg" alt="CRUSH">
+                <p>Crush up all the vanilla wafers like the hopes of the Ottawa Senators ever winning the Stanley Cup and fill the bottom of a pie plate.</p>
+                <a href="#part1" data-role="button" role="button" class="prevPage" data-corners="true" data-inline="true" data-iconpos="left" data-icon="carat-l"></a>
+                <a href="#part3" id="rightbtn" data-role="button" class="nextPage" role="button" data-corners="true" data-inline="true" data-iconpos="right" data-icon="carat-r"></a>
+            </div>
+    </div>
+    <!--STEP 3 OF 9-->
+    <div data-role="page" id="part3" data-url="part3" data-close-btn="none" data-dialog="true">
+            <div data-role="header" role="banner" data-theme="b">
+                <a href="#home" id="closebtn" data-theme="b" data-icon="delete" data-role="button" role="button" data-transition="slidedown" data-iconpos="left"></a>
+                <h1 data-role="header">Step 3 of 9</h1>
+            </div>
+            <div data-role="content" data-theme="b" role="main">
+                <h1>Mix</h1>
+                <img id="tutPic3" src="pics/mix.jpg" alt="MIX">
+                <p>Thoroughly mix the cream cheese with sugar until all the rebel clumps have been assimilated</p>
+                <a href="#part2" data-role="button" role="button" class="prevPage" data-corners="true" data-inline="true" data-iconpos="left" data-icon="carat-l"></a>
+                <a href="#part4" id="rightbtn" data-role="button" class="nextPage" role="button" data-corners="true" data-inline="true" data-iconpos="right" data-icon="carat-r"></a>
+            </div>
+    </div>
+    <!--STEP 4 OF 9-->
+    <div data-role="page" id="part4" data-url="part4" data-close-btn="none" data-dialog="true">
+            <div data-role="header" role="banner" data-theme="b">
+                <a href="#home" id="closebtn" data-theme="b" data-icon="delete" data-role="button" role="button" data-transition="slidedown" data-iconpos="left"></a>
+                <h1 data-role="header">Step 4 of 9</h1>
+            </div>
+            <div data-role="content" data-theme="b" role="main">
+                <h1>More Mixing</h1>
+                <img class="tutPic4" src="pics/mix2.jpg" alt="MIX2">
+                <p>After all clumps have been assimilated mix in the egg, egg yolk, and the vanilla extract. Ensure that all hidden clump strongholds have been destroyed. Persistant scum.</p>
+                <a href="#part3" data-role="button" role="button" class="prevPage" data-corners="true" data-inline="true" data-iconpos="left" data-icon="carat-l"></a>
+                <a href="#part5" id="rightbtn" data-role="button" class="nextPage" role="button" data-corners="true" data-inline="true" data-iconpos="right" data-icon="carat-r"></a>
+            </div>
+    </div>
+    <!--STEP 5 OF 9-->
+    <div data-role="page" id="part5" data-url="part5" data-close-btn="none" data-dialog="true">
+            <div data-role="header" role="banner" data-theme="b">
+                <a href="#home" id="closebtn" data-theme="b" data-icon="delete" data-role="button" role="button" data-transition="slidedown" data-iconpos="left"></a>
+                <h1 data-role="header">Step 5 of 9</h1>
+            </div>
+            <div data-role="content" data-theme="b" role="main">
+                <h1>Intermission</h1>
+                <img class="tutPic5" src="pics/break.jpg" alt="BEER">
+                <p>You're more than halfway there now! Take a break, go enjoy a nice cold beer, you've earned it. A weary baker is a bad baker.</p>
+                <a href="#part4" data-role="button" role="button" class="prevPage" data-corners="true" data-inline="true" data-iconpos="left" data-icon="carat-l"></a>
+                <a href="#part6" id="rightbtn" data-role="button" class="nextPage" role="button" data-corners="true" data-inline="true" data-iconpos="right" data-icon="carat-r"></a>
+            </div>
+    </div>
+    <!--STEP 6 OF 9-->
+    <div data-role="page" id="part6" data-url="part6" data-close-btn="none" data-dialog="true">
+            <div data-role="header" role="banner" data-theme="b">
+                <a href="#home" id="closebtn" data-theme="b" data-icon="delete" data-role="button" role="button" data-transition="slidedown" data-iconpos="left"></a>
+                <h1 data-role="header">Step 6 of 9</h1>
+            </div>
+            <div data-role="content" data-theme="b" role="main">
+                <h1>Drown The Wafers</h1>
+                <img class="tutPic6" src="pics/pour.jpg" alt="POUR">
+                <p>Now that you're nice and relaxed, grab your pie plate that you've previously filled in with crushed wafers ("See Step 2 of 9") and pour in your cream cheese mixture. Delicately smoothe out the surface if needed.</p>
+                <a href="#part5" data-role="button" role="button" class="prevPage" data-corners="true" data-inline="true" data-iconpos="left" data-icon="carat-l"></a>
+                <a href="#part7" id="rightbtn" data-role="button" class="nextPage" role="button" data-corners="true" data-inline="true" data-iconpos="right" data-icon="carat-r"></a>
+            </div>
+    </div>
+    <!--STEP 7 OF 9-->
+    <div data-role="page" id="part7" data-url="part7" data-close-btn="none" data-dialog="true">
+            <div data-role="header" role="banner" data-theme="b">
+                <a href="#home" id="closebtn" data-theme="b" data-icon="delete" data-role="button" role="button" data-transition="slidedown" data-iconpos="left"></a>
+                <h1 data-role="header">Step 7 of 9</h1>
+            </div>
+            <div data-role="content" data-theme="b" role="main">
+                <h1>Final Stretch</h1>
+                <img class="tutPic7" src="pics/oven.jpg" alt="BAKE">
+                <p>Once your oven is preheated to 350F place the pie plate on the middle rack and let it bake at 350F for 25 minutes. You can use this time to go enjoy another beer, you're an accomplished baker afterall, you deserve the finer things in life.</p>
+                <a href="#part6" data-role="button" role="button" class="prevPage" data-corners="true" data-inline="true" data-iconpos="left" data-icon="carat-l"></a>
+                <a href="#part8" id="rightbtn" data-role="button" class="nextPage" role="button" data-corners="true" data-inline="true" data-iconpos="right" data-icon="carat-r"></a>
+            </div>
+    </div>
+    <!--STEP 8 OF 9-->
+    <div data-role="page" id="part8" data-url="part8" data-close-btn="none" data-dialog="true">
+            <div data-role="header" role="banner" data-theme="b">
+                <a href="#home" id="closebtn" data-theme="b" data-icon="delete" data-role="button" role="button" data-transition="slidedown" data-iconpos="left"></a>
+                <h1 data-role="header">Step 8 of 9</h1>
+            </div>
+            <div data-role="content" data-theme="b" role="main">
+                <h1>Cherries!</h1>
+                <img class="tutPic8" src="pics/spread.jpg" alt="CHERRIES">
+                <p>Now that the 25 minutes are up, remove the pie plate from the oven and let it sit for 5 minutes, or just enough time for you to go mano a mano with that can of cherries. Once you've got your can open drain any excess water that may be inside, then scoop the rest out on top of the cake and spread them evenly.</p>
+                <a href="#part7" data-role="button" role="button" class="prevPage" data-corners="true" data-inline="true" data-iconpos="left" data-icon="carat-l"></a>
+                <a href="#part9" id="rightbtn" data-role="button" class="nextPage" role="button" data-corners="true" data-inline="true" data-iconpos="right" data-icon="carat-r"></a>
+            </div>
+    </div>
+    <!--STEP 9 OF 9-->
+    <div data-role="page" id="part9" data-url="part9" data-close-btn="none" data-dialog="true">
+            <div data-role="header" role="banner" data-theme="b">
+                <a href="#home" id="closebtn" data-theme="b" data-icon="delete" data-role="button" role="button" data-transition="slidedown" data-iconpos="left"></a>
+                <h1 data-role="header">Step 9 of 9</h1>
+            </div>
+            <div data-role="content" data-theme="b" role="main">
+                <h1>Congratulations!</h1>
+                <img class="tutPic9" src="pics/celebrate.jpg" alt="DONE">
+                <p>You've done it! You've baked the perfect cheesecake! Go ahead, indulge, but tread carefully. The dark arts of cheesecakery are not to be abused.</p>
+                <a href="#part8" data-role="button" role="button" class="prevPage" data-corners="true" data-inline="true" data-iconpos="left" data-icon="carat-l"></a>
+                <a href="#" id="rightbtn" data-role="button" role="button" data-corners="true" data-inline="true" data-iconpos="right" data-icon="carat-r" class="ui-state-disabled"></a>
+            </div>
+    </div>
+    <!--About Me-->
+    <div data-role="page" id="info" data-url="info" tabindex="0" data-theme="b">
+        <div data-role="header" role="banner" data-theme="b">
+            <h1>About Me</h1>
+        </div>
+        <div data-role="content" data-theme="b" role="main">
+            <img id="aboutMe" src="pics/ME.jpg" alt="ME">
+            <p>Greetings! I'm Jason from Montreal, Quebec. I've been a baker for 5 years prior to my descision to hang up the apron in favor of baking programs instead of dough. (less calories in programs) C sur j'aussi parle français, la vie au Québec pour les anglophones qui sont pas bilingue n'est pas une belle vie, mais au moins nous avons des Deps a chaque coin qui vendre d'la bière jusqu'a 23hrs!</p>
+            <!--Footer-->
+            <div data-role="footer" data-position="fixed" role="contentinfo" data-theme="b">
+                <div data-role="navbar" role="navigation">
+                    <ul>
+                        <li>
+                            <a href="#home" data-role="button" data-transition="slidedown" data-icon="home" data-iconpos="top">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#info" class="ui-state-disabled" data-role="button" data-transition="slidedown" data-icon="info" data-iconpos="top">
+                                About Me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/Footer-->
+            <!--/About Me-->
+        </div>
+    </div>
+</body>
+</html>
