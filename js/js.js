@@ -18,5 +18,5 @@ $(document).ready(function(ev) {
             counter -= 1;
             localStorage.setItem("currentPageId", JSON.stringify(pagePart + counter));
         });
-    });
+    //});
 });
