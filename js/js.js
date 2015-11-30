@@ -1,5 +1,5 @@
-//var counter = 1;
-//var pagePart = "#part";
+var counter = 1;
+var pagePart = "#part";
 
 $(document).on("mobileinit", function() {});
 
@@ -13,6 +13,7 @@ $(document).ready(function(ev) {
         $("#startTut").attr("href", partParse);
        });
     });
-});
+    };
+}):
 
 
